@@ -1,7 +1,31 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+//BASE
+// reset-styles
+@import "./base/reset-styles";
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+//UTILS
+// variables
+@import "./utils/variables";
+// visually-hidden
+@import "./utils/visually-hidden";
+
+//COMPONENTS
+//body
+@import "./components/body";
+// header
+@import "./components/page-header";
+// hero
+@import "./components/hero";
+// products
+@import "./components/products";
+// about
+@import "./components/about";
+// advantages
+@import "./components/advantages";
+// gallery
+@import "./components/gallery";
+// customers-reviews
+@import "./components/customer-reviews";
+// contacts
+@import "./components/contacts";
+// footer
+@import "./components/footer";
