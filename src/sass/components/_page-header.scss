@@ -24,7 +24,7 @@
   transition: transform 250ms linear;
 
   &__list {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
     color: $secondary-text-color;
@@ -33,6 +33,10 @@
   &__item {
     border-top: 1px solid #e18298;
     padding: 14px 0;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
     &:last-child {
       border-bottom: 1px solid #e18298;
     }

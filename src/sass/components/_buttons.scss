@@ -3,9 +3,40 @@
   border: none;
 }
 .mobile-modal-menu__close-btn {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+
   border: none;
+  cursor: pointer;
   background-color: transparent;
 }
 .mobile-modal-menu__btn {
+  display: block;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: none;
+  cursor: pointer;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $accent-color;
+  background-color: #ffff;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+.mobile-modal-menu__btn-text {
+  display: inline-block;
+  padding-left: 51px;
+  padding-right: 51px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.mobile-modal-menu__icon {
+  margin-left: 20px;
 }
