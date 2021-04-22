@@ -1,10 +1,30 @@
 .section-suptitle {
     font-family: $secondary-font;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 1.13;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: $auxiliary-color;
+}
+
+@media screen and (min-width: 320px) {
+    .section-suptitle {
+        font-size: 18px;
+        line-height: 1.17;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .section-suptitle {
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .section-suptitle {
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+    }
 }
