@@ -58,12 +58,13 @@
 
 .list-products__text{
 
-  font-weight: 700px;
+  font-weight: bold;
   font-size: 14px;
   line-height: 152%;
   text-align: center;
   letter-spacing: 0.04em;
   color: $secondary-text-color;
+  margin-bottom: 30px;
 }
 
 .list-products__btn{
@@ -81,7 +82,7 @@
   position: absolute;
   left: 16px;
   top: -29%;
-  margin-bottom: 22px;
+
   
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .list-products__title::before{
@@ -120,4 +121,14 @@
       display: block;
       background-image: url(../images/products/laptop/ice-cream@2x.png);
     }
+}
+}
+
+.list-products__btn{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $secondary-text-color;
+  margin: 0 auto;
 }
