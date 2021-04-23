@@ -18,20 +18,17 @@
     />
   </head>
   <body>
+    <!-- PAGE HEADER -->
+    <include src="./partials/page-header.html"></include>
 
-      <!-- PAGE HEADER -->
-  <include src="./partials/page-header.html"></include>
+    <main>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
+    </main>
+    <!-- <include src="./partials/footer.html"></include> -->
 
-  <main>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/customer-reviews.html"></include>
-  </main>
-  <!-- <include src="./partials/footer.html"></include> -->
-  
     <script src="./js/mobile-menu.js"></script>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
-
- 
 </html>
