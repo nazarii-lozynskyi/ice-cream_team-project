@@ -1,0 +1,50 @@
+.hero-section {
+  position: relative;
+  transform: translateY(-56px);
+  height: 502px;
+  @media screen and (min-width: 768px) {
+    height: 399px;
+  }
+
+  background-color: #ffb8ca;
+
+  &__title {
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    top: 192px;
+
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    &_last-line {
+      font-size: 48px;
+      line-height: 0.95;
+      letter-spacing: 0.015em;
+      color: $accent-color;
+      text-transform: uppercase;
+    }
+  }
+}
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 1;
+  @media screen and (min-width: 768px) {
+    right: 247px;
+  }
+}
+.hero-img-ellipse {
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  @media screen and (min-width: 768px) {
+    bottom: 46px;
+    right: 137px;
+  }
+}

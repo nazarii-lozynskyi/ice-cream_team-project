@@ -1,14 +1,19 @@
 .header-section {
+  position: relative;
+  z-index: 5;
   margin-top: 6px;
   background-color: transparent;
   .container {
     display: flex;
     justify-content: space-between;
+    //width: 100%;
+    //max-width: 480px;
   }
 }
 
 .mobile-modal-menu {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   padding-top: 60px;
@@ -18,10 +23,14 @@
   height: 100%;
   max-width: 480px;
 
-  background-color: #e17992;
+  /* прячет модальное меню */
+  visibility: hidden;
+  pointer-events: none;
   transform: translateX(120%);
+  /*-------------------------*/
+  background-color: #e17992;
 
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, visibility 250ms linear;
 
   &__list {
     font-weight: 700;
@@ -44,4 +53,6 @@
 }
 .is-open {
   transform: translateX(0%);
+  pointer-events: all;
+  visibility: visible;
 }
