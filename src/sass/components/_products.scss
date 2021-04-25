@@ -1,0 +1,252 @@
+.products {
+    padding-top: 121px;
+    padding-bottom: 98px;
+}
+
+.products__label {
+    font-family: $secondary-font;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: $auxiliary-color;
+
+    margin-bottom: 15px;
+}
+
+.products__title {
+    font-family: $secondary-font;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+
+    margin-bottom: 144px;
+}
+
+// List-products
+.list-products__item{
+  position: relative;
+  
+  padding-top: 161px;
+  padding-bottom: 41px;
+
+
+    background: #ffb8ca;
+    border-radius: 24px;
+    margin-bottom: 130px;
+}
+.list-products__item--color-nude {
+    background: #f0d1a5;
+}
+.list-products__item--color-green {
+    background: #c2e297;
+}
+
+.list-products__title{
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  margin-bottom: 30px;
+  
+}
+
+.list-products__text{
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $secondary-text-color;
+
+  width: 200px;
+  height: 124px;
+  margin: 0 auto;
+  margin-bottom: 30px;}
+
+.list-products__btn {
+    padding: 0;
+    border: none;
+}
+
+// Ice-cream
+.list-products__title::before{
+  content: "";
+  display: block;
+  background-image: url(../images/products/mobile/ice-cream@1x.png);
+  width: 249px;
+  height: 252px;
+
+  position: absolute;
+  left: 16px;
+  top: -23%;}
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .list-products__title::before{
+      content: "";
+    display: block;
+    background-image: url(../images/products/mobile/ice-cream@1x.png);
+    width: 249px;
+    height: 252px;
+
+    position: absolute;
+    left: 16px;
+    top: -29%;
+    margin-bottom: 22px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .list-products__title::before {
+            content: "";
+            display: block;
+            background-image: url(../images/products/mobile/ice-cream@2x.png);
+        }
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .list-products__title::before {
+        content: "";
+        display: block;
+        background-image: url(../images/products/tablet/ice-cream@1x.png);
+    }
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .list-products__title::before {
+            content: "";
+            display: block;
+            background-image: url(../images/products/tablet/ice-cream@2x.png);
+        }
+    }
+}
+
+@media screen and(min-width: 1280px){
+  .list-products__title::before{
+    content:"";
+    display: block;
+    background-image: url(../images/products/laptop/ice-cream@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .list-products__title::before{
+      content: "";
+      display: block;
+      background-image: url(../images/products/laptop/ice-cream@2x.png);
+
+    }
+  }
+}
+// END
+
+
+// Ice-coffee
+.list-products__title--ice-coffee::before{
+  content: "";
+  display: block;
+  background-image: url(../images/products/mobile/ice-coffee@1x.png);
+  margin-top: 17px;
+  
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .list-products__title--ice-coffee::before{
+      content: "";
+      background-image:url(../images/products/mobile/ice-coffee@2x.png);
+    }
+  }
+}
+
+@media screen and(min-width: 768px){
+  .list-products__title--ice-coffee::before{
+    content: "";
+    background-image: url(../images/products/tablet/ice-coffee@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    .list-products__title--ice-coffee::before{
+      content: "";
+      background-image: url(../images/products/tablet/ice-coffee@2x.png);
+    }
+  }
+}
+
+@media screen and(min-width: 1280px){
+  .list-products__title--ice-coffee::before{
+    content: '';
+    background-image: url(../images/products/laptop/ice-coffee@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    .list-products__title--ice-coffee::before{
+      content: '';
+      background-image: url(../images/products/laptop/ice-coffee@2x.png);
+    }
+  }
+}
+
+// Milkshake
+.list-products__title--milkshakes::before{
+  content:'';
+  background-image: url(../images/products/mobile/milk-shakes@1x.png);
+  margin-top: 16px;
+ 
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+  .list-products__title--milkshakes::before{
+    content:'';
+    background-image: url(../images/products/mobile/milk-shakes@2x.png);
+  }
+}
+
+@media screen and(min-width: 768px){
+  .list-products__title--milkshakes::before{
+    content:'';
+    background-image: url(../images/products/tablet/milk-shakes@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    .list-products__title--milkshakes::before{
+      content:'';
+      background-image: url(../images/products/tablet/milk-shakes@2x.png);
+    }
+  }
+
+}
+}
+@media screen and(min-width: 1280px){
+  .list-products__title--milkshakes::before{
+    content:'';
+    background-image: url(../images/products/mobile/milk-shakes@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+    .list-products__title--milkshakes::before{
+      content:'';
+      background-image: url(../images/products/laptop/milk-shakes@2x.png);
+  }
+  }
+}
+// END Milkshake
+
+// BTN
+
+.list-products__btn{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $secondary-text-color;
+  margin: 0 auto;
+}
+
+// END BTN
+
+// list-products__title::after
+// .list-products__title::after{
+//   content:"";
+//   display: block;
+//   margin: 0 auto;
+//   background-image: ? ;
+
+// }

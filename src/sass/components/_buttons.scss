@@ -41,6 +41,7 @@
   margin-left: 20px;
 }
 
+
 //ABOUT-BTN
 .about__btn {
   position: relative;
@@ -74,5 +75,52 @@
 
     align-items: center;
     justify-content: center;
+
+    
+.hero-section__btn-one {
+  position: absolute;
+  top: 317px;
+  left: 20px;
+  z-index: 2;
+  cursor: pointer;
+
+  padding: 7px 14px;
+  border-radius: 20px;
+
+  background-color: $accent-color;
+  color: $secondary-text-color;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 00.015em;
+
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+.hero-section__btn-two {
+  position: absolute;
+  top: 317px;
+  left: 90px;
+  z-index: 2;
+  cursor: pointer;
+
+  padding: 7px 14px;
+  border-radius: 20px;
+
+  background-color: $priority-background-color;
+  color: $accent-color;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 00.015em;
+
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+
   }
 }
