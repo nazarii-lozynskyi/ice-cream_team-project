@@ -2,6 +2,8 @@
   background-color: $secondary-background-color;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 125px;
+  padding-bottom: 20px;
 }
 .about__description {
   margin-bottom: 45px;
@@ -25,11 +27,6 @@
 }
 
 @media screen and (min-width: 320px) {
-  .about {
-    padding-top: 125px;
-    padding-bottom: 39px;
-  }
-
   .section-title {
     margin-bottom: 26px;
   }
@@ -61,7 +58,6 @@
 @media screen and (min-width: 768px) {
   .about {
     padding-top: 130px;
-    padding-bottom: 66px;
   }
   .about__wrapper {
     display: flex;
