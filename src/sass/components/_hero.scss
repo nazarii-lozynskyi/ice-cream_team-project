@@ -3,15 +3,43 @@
   transform: translateY(-56px);
   height: 502px;
   @media screen and (min-width: 768px) {
-    height: 399px;
+    height: 450px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 710px;
   }
 
   background-color: #ffb8ca;
 
-  &__title {
+  &__title-buttons-wrapper {
     position: absolute;
+    top: 192px;
     left: 20px;
     z-index: 2;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      left: 34px;
+      top: 160px;
+    }
+    @media screen and (min-width: 1280px) {
+      position: absolute;
+      left: 115px;
+      top: 171px;
+    }
+  }
+  &__buttons-wrapper {
+    margin-top: 20px;
+    @media screen and (min-width: 768px) {
+      margin-top: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 25px;
+    }
+  }
+  &__title {
+    //position: absolute;
+    //z-index: 2;
+    left: 20px;
     top: 192px;
 
     font-family: $secondary-font;
@@ -28,6 +56,96 @@
       color: $accent-color;
       text-transform: uppercase;
     }
+    @media screen and (min-width: 768px) {
+      //top: 160px;
+
+      //left: 34px;
+      font-size: 22px;
+      line-height: 1.13;
+      &_last-line {
+        font-size: 34px;
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      top: 171px;
+
+      left: 103px;
+      font-size: 38px;
+      line-height: 1.15;
+
+      &_last-line {
+        font-size: 58px;
+      }
+    }
+  }
+  &__about {
+    display: none;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      bottom: 28px;
+      left: 34px;
+
+      display: flex;
+      //align-items: center;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 77px;
+      bottom: 45px;
+    }
+  }
+  &__about-text-desc-wrapper {
+    margin-top: 46px;
+    @media screen and (min-width: 1280px) {
+      margin-top: 54px;
+    }
+  }
+  &__about-text-desc {
+    width: 114px;
+    margin-bottom: 7px;
+
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 150%;
+    color: $secondary-text-color;
+    @media screen and (min-width: 1280px) {
+      width: 200px;
+      margin-bottom: 20px;
+
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+  &__about-link {
+    background-color: $priority-background-color;
+  }
+  &__counter-imgs-wrapper {
+    position: absolute;
+    top: 143px;
+    right: 34px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media screen and (min-width: 1280px) {
+      top: 211px;
+      right: 115px;
+    }
+  }
+  &__cafes-counter {
+    margin-bottom: 14px;
+  }
+  &__girl-img {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 34px;
+      z-index: 5;
+    }
+    @media screen and (min-width: 1280px) {
+      right: 109px;
+    }
   }
 }
 .hero-img {
@@ -38,13 +156,19 @@
   @media screen and (min-width: 768px) {
     right: 247px;
   }
+  @media screen and (min-width: 1280px) {
+    right: 450px;
+  }
 }
 .hero-img-ellipse {
   position: absolute;
   bottom: 75px;
   right: 0;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     bottom: 46px;
     right: 137px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 275px;
   }
 }

@@ -6,11 +6,39 @@
         <img src="./images/header-logo@1x.png" alt="company´s logotype" />
       </picture>
     </a>
+    <nav class="header-main-nav">
+      <ul class="header-main-nav__list list">
+        <li class="header-main-nav__item">
+          <a class="header-main-nav__link link" href="">Home</a>
+        </li>
+        <li class="header-main-nav__item">
+          <a class="header-main-nav__link link" href="">About us</a>
+        </li>
+        <li class="header-main-nav__item">
+          <a class="header-main-nav__link link" href="">How it´s made</a>
+        </li>
+        <li class="header-main-nav__item">
+          <a class="header-main-nav__link link" href="">Our products</a>
+        </li>
+        <li class="header-main-nav__item">
+          <a class="header-main-nav__link link" href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <button class="mobile-burger-btn" data-menu-button>
       <svg width="20" height="12">
         <use href="./images/sprite.svg#icon-Burger"></use>
       </svg>
     </button>
+    <button class="mobile-modal-menu__btn mobile-modal-menu__btn_in-header" type="button">
+      <span class="mobile-modal-menu__btn-text"
+        >Buy now
+        <svg width="6" height="8" class="mobile-modal-menu__icon">
+          <use href="./images/sprite.svg#icon-button-arrow"></use>
+        </svg>
+      </span>
+    </button>
+    <!-- модальное меню мобайл -->
     <div class="mobile-modal-menu" data-menu>
       <button class="mobile-modal-menu__close-btn" data-menu-close>
         <svg width="14" height="14">
@@ -33,5 +61,6 @@
         <li class="mobile-modal-menu__item"><a href="" class="link">Contacts</a></li>
       </ul>
     </div>
+    <!-----------------------/END модальное меню мобайл---------------------------------- -->
   </div>
 </header>
