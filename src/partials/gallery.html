@@ -1,0 +1,45 @@
+<section class="gallery">
+  <h2 class="visually-hidden">Gallery</h2>
+  <picture class="gallery__picture">
+    <source
+      srcset="
+        ./images/gallery/laptop/collage@1x.webp 1x,
+        ./images/gallery/laptop/collage@2x.webp 2x
+      "
+      media="(min-width:1280px)"
+      type="image/webp"
+    />
+    <source
+      srcset="./images/gallery/laptop/collage@1x.png 1x, ./images/gallery/laptop/collage@2x.png 2x"
+      media="(min-width:1280px)"
+    />
+
+    <source
+      srcset="
+        ./images/gallery/tablet/collage@1x.webp 1x,
+        ./images/gallery/tablet/collage@2x.webp 2x
+      "
+      media="(min-width:768px)"
+      type="image/webp"
+    />
+    <source
+      srcset="./images/gallery/tablet/collage@1x.png 1x, ./images/gallery/tablet/collage@2x.png 2x"
+      media="(min-width:768px)"
+    />
+
+    <source
+      srcset="
+        ./images/gallery/mobile/collage@1x.webp 1x,
+        ./images/gallery/mobile/collage@2x.webp 2x
+      "
+      media="(min-width:320px)"
+      type="image/webp"
+    />
+    <source
+      srcset="./images/gallery/mobile/collage@1x.png 1x, ./images/gallery/mobile/collage@2x.png 2x"
+      media="(min-width:320px)"
+    />
+
+    <img class="gallery__img" src="./images/gallery/laptop/collage@1x.png" alt="" />
+  </picture>
+</section>
