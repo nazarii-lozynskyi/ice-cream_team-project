@@ -1,0 +1,82 @@
+<section class="about">
+  <div class="container">
+    <p class="about__suptitle section-suptitle">tradition and love</p>
+    <h2 class="about__title section-title">how it’s made?</h2>
+    <div class="about__wrapper">
+      <div class="about__left-side">
+        <picture>
+          <source
+            srcset="
+              ./images/about/laptop/about-cow@1x.webp 1x,
+              ./images/about/laptop/about-cow@2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/about/laptop/about-cow@1x.png  1x,
+              ./images/about/laptop/about-cow@2x.webp 2x
+            "
+            media="(min-width: 1280px)"
+          />
+
+          <source
+            srcset="
+              ./images/about/tablet/about-cow@1x.webp 1x,
+              ./images/about/tablet/about-cow@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/about/tablet/about-cow@1x.png 1x,
+              ./images/about/tablet/about-cow@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              ./images/about/mobile/about-cow@1x.webp 1x,
+              ./images/about/mobile/about-cow@2x.webp 2x
+            "
+            media="(min-width: 320px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/about/mobile/about-cow@1x.png 1x,
+              ./images/about/mobile/about-cow@2x.png 2x
+            "
+            media="(min-width: 320px)"
+          />
+
+          <img
+            class="about__img"
+            src="./images/about/laptop/about-cow@1x.png"
+            alt="cow with decanter"
+          />
+        </picture>
+      </div>
+      <div class="about-right-side">
+        <p class="about__description">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <span class="about__tab">Aliquam erat volutpat. Aenean accumsan.</span>
+        <button class="about__btn" type="button">
+          Read more<svg width="6" height="8" class="about__icon">
+            <use href="./images/sprite.svg#icon-button-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

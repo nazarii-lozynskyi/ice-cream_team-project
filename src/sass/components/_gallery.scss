@@ -1,0 +1,30 @@
+.gallery {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: linear-gradient($secondary-background-color 60%, $priority-background-color 50%);
+}
+
+.gallery__img {
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+    .gallery {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .gallery {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .gallery {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+}
