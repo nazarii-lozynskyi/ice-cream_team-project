@@ -1,14 +1,89 @@
 <section class="hero-section">
   <div class="container">
-    <h1 class="hero-section__title">
-      ice cream <br />
-      made with
-      <br />
-      <span class="hero-section__title_last-line">passion</span>
-    </h1>
-    <a href="" class="hero-section__btn-one link">Products</a>
-    <a href="" class="hero-section__btn-two link">How it’s made?</a>
+    <div class="hero-section__counter-imgs-wrapper">
+      <!-- картинки-счетчики -->
+      <picture>
+        <source
+          srcset="./images/hero/laptop/cafes@1x.png 1x, ./images/hero/laptop/cafes@2x.png 2x"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="./images/hero/tablet/cafes@1x.png 1x, ./images/hero/tablet/cafes@2x.png 2x"
+          media="(min-width:768px)"
+        />
+        <img
+          class="hero-section__cafes-counter-img"
+          src="./images/hero/tablet/cafes@1x.png"
+          alt="16 Cafes"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./images/hero/laptop/food-trucks@1x.png 1x,
+            ./images/hero/laptop/food-trucks@2x.png 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/hero/tablet/food-trucks@1x.png 1x,
+            ./images/hero/tablet/food-trucks@2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <img
+          class="hero-section__food-trucks-counter"
+          src="./images/hero/tablet/food-trucks@1x.png"
+          alt="23 Food trucks"
+        />
+      </picture>
+    </div>
+    <!-- /ENDкартинки-счетчики -->
+    <!-- картинка Soooooooo Tasty -->
     <picture>
+      <source
+        srcset="./images/hero/laptop/so-tasty@1x.png 1x, ./images/hero/laptop/so-tasty@2x.png 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="./images/hero/tablet/so-tasty@1x.png 1x, ./images/hero/tablet/so-tasty@2x.png 2x"
+        media="(min-width:768px)"
+      />
+      <img
+        class="hero-section__girl-img"
+        src="./images/hero/tablet/so-tasty@1x.png"
+        alt="excited girl eats ice cream"
+      />
+    </picture>
+    <!-- /END картинка Soooooooo Tasty -->
+
+    <!-- заголовок хедера -->
+    <div class="hero-section__title-buttons-wrapper">
+      <h1 class="hero-section__title">
+        ice cream <br />
+        made with
+        <br />
+        <span class="hero-section__title_last-line">passion</span>
+      </h1>
+      <!--/END заголовок хедера -->
+      <!-- кнопки-ссылки хедера -->
+      <div class="hero-section__buttons-wrapper">
+        <a href="" class="hero-section__btn-one link">Products</a>
+        <a href="" class="hero-section__btn-two link">How it’s made?</a>
+      </div>
+
+      <!-- /END кнопки-ссылки хедера -->
+    </div>
+    <!-- картинка и бекграунд мороженого -->
+    <picture>
+      <source
+        srcset="
+          ./images/hero/laptop/very-big-icecream@1x.png 1x,
+          ./images/hero/laptop/very-big-icecream@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
       <source
         srcset="
           ./images/hero/tablet/very-big-icecream@1x.png 1x,
@@ -32,6 +107,13 @@
     <picture>
       <source
         srcset="
+          ./images/hero/laptop/icecream-bcg-img@1x.png 1x,
+          ./images/hero/laptop/icecream-bcg-img@2x.png 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
           ./images/hero/tablet/icecream-bcg-img@1x.png 1x,
           ./images/hero/tablet/icecream-bcg-img@2x.png 2x
         "
@@ -51,5 +133,54 @@
         alt="Ice cream image"
       />
     </picture>
+    <!-- /END картинка и бекграунд мороженого -->
+    <!-- маленькая секция about -->
+    <div class="hero-section__about">
+      <picture>
+        <source
+          srcset="./images/hero/laptop/milk-jug@1x.png 1x, ./images/hero/laptop/milk-jug@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/hero/tablet/milk-jug@1x.png 1x, ./images/hero/tablet/milk-jug@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="./images/hero/tablet/milk-jug@1x.png"
+          class="hero-section__about-img"
+          alt="Jug full of milk"
+        />
+      </picture>
+      <div class="hero-section__about-text-desc-wrapper">
+        <p class="hero-section__about-text-desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <a href="" class="hero-section__about-link link">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/laptop/arrow-right-26x26@1x.png 1x,
+                ./images/hero/laptop/arrow-right-26x26@2x.png 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero/tablet/arrow-right-18x18@1x.png 1x,
+                ./images/hero/tablet/arrow-right-18x18@2x.png 2x
+              "
+              media="(min-width:768px)"
+            />
+            <img
+              class="about-link-img"
+              src="./images/hero/tablet/arrow-right-18x18@1x.png"
+              alt=""
+            />
+          </picture>
+        </a>
+      </div>
+    </div>
+    <!-- /END маленькая секция about -->
   </div>
 </section>

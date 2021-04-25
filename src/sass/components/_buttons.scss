@@ -1,10 +1,18 @@
 .mobile-burger-btn {
   background-color: transparent;
   border: none;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 39px;
+    right: 224px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 .mobile-modal-menu__close-btn {
   position: absolute;
-  top: 24px;
+  top: 28px;
   right: 28px;
 
   border: none;
@@ -25,18 +33,38 @@
   line-height: 1.31;
   color: $accent-color;
   background-color: #ffff;
+
+  padding-left: 57px;
+  padding-right: 57px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: background-color 250ms linear;
   &:hover,
   &:focus {
     background-color: #ecebeb;
   }
+  @media screen and (min-width: 768px) {
+    padding-left: 46px;
+    padding-right: 45px;
+  }
+
+  &_in-header {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 27px;
+      right: 34px;
+
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+    @media screen and (min-width: 1280px) {
+      right: 115px;
+    }
+  }
 }
-.mobile-modal-menu__btn-text {
-  display: inline-block;
-  padding-left: 51px;
-  padding-right: 51px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-}
+
 .mobile-modal-menu__icon {
   margin-left: 20px;
 }
@@ -79,14 +107,10 @@
   }
 }
 .hero-section__btn-one {
-  position: absolute;
-  top: 317px;
-  left: 20px;
-  z-index: 2;
-  cursor: pointer;
-
+  margin-right: 8px;
   padding: 7px 14px;
   border-radius: 20px;
+  cursor: pointer;
 
   background-color: $accent-color;
   color: $secondary-text-color;
@@ -95,6 +119,17 @@
   letter-spacing: 00.015em;
 
   transition: background-color 250ms linear;
+  //position: absolute;
+  //top: 317px;
+  //left: 20px;
+  // z-index: 2;
+  @media screen and (min-width: 1280px) {
+    padding: 11px 35px;
+    font-size: 14px;
+    line-height: 1.28;
+
+    margin-right: 15px;
+  }
 
   &:hover,
   &:focus {
@@ -102,10 +137,10 @@
   }
 }
 .hero-section__btn-two {
-  position: absolute;
-  top: 317px;
-  left: 90px;
-  z-index: 2;
+  //position: absolute;
+  //top: 317px;
+  //left: 90px;
+  //z-index: 2;
   cursor: pointer;
 
   padding: 7px 14px;
@@ -118,6 +153,15 @@
   letter-spacing: 00.015em;
 
   transition: background-color 250ms linear;
+  // @media screen and (min-width: 768px) {
+  //   left: 108px;
+  //   top: 260px;
+  // }
+  @media screen and (min-width: 1280px) {
+    padding: 11px 20px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
 
   &:hover,
   &:focus {
