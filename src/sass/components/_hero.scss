@@ -2,6 +2,9 @@
   position: relative;
   transform: translateY(-56px);
   height: 502px;
+  .container {
+    position: relative;
+  }
   @media screen and (min-width: 768px) {
     height: 450px;
   }
@@ -33,7 +36,7 @@
       margin-top: 20px;
     }
     @media screen and (min-width: 1280px) {
-      margin-top: 25px;
+      margin-top: 35px;
     }
   }
   &__title {
@@ -70,11 +73,13 @@
       top: 171px;
 
       left: 103px;
-      font-size: 38px;
+      font-size: 39px;
       line-height: 1.15;
+      letter-spacing: 0.05em;
 
       &_last-line {
-        font-size: 58px;
+        font-size: 60px;
+        letter-spacing: 0.05em;
       }
     }
   }
@@ -82,7 +87,7 @@
     display: none;
     @media screen and (min-width: 768px) {
       position: absolute;
-      bottom: 28px;
+      bottom: -423px;
       left: 34px;
 
       display: flex;
@@ -90,7 +95,7 @@
     }
     @media screen and (min-width: 1280px) {
       left: 77px;
-      bottom: 45px;
+      bottom: -670px;
     }
   }
   &__about-text-desc-wrapper {
@@ -119,13 +124,17 @@
     background-color: $priority-background-color;
   }
   &__counter-imgs-wrapper {
-    position: absolute;
-    top: 143px;
-    right: 34px;
+    display: none;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 143px;
+      right: 34px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
     @media screen and (min-width: 1280px) {
       top: 211px;
       right: 115px;
@@ -139,36 +148,40 @@
     @media screen and (min-width: 768px) {
       display: block;
       position: absolute;
-      bottom: 0;
+      bottom: -450px;
       right: 34px;
       z-index: 5;
     }
     @media screen and (min-width: 1280px) {
-      right: 109px;
+      right: 35px;
+      bottom: -710px;
     }
   }
 }
 .hero-img {
   position: absolute;
-  bottom: 0;
+  bottom: -502px;
   right: 32px;
   z-index: 1;
   @media screen and (min-width: 768px) {
     right: 247px;
+    bottom: -450px;
   }
   @media screen and (min-width: 1280px) {
     right: 450px;
+    bottom: -710px;
   }
 }
 .hero-img-ellipse {
   position: absolute;
-  bottom: 75px;
+  bottom: -430px;
   right: 0;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    bottom: 46px;
+    bottom: -402px;
     right: 137px;
   }
   @media screen and (min-width: 1280px) {
     right: 275px;
+    bottom: -638px;
   }
 }

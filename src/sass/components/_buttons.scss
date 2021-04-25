@@ -107,14 +107,10 @@
   }
 }
 .hero-section__btn-one {
-  //position: absolute;
-  //z-index: 2;
-  //top: 317px;
-  //left: 20px;
-  cursor: pointer;
-
+  margin-right: 8px;
   padding: 7px 14px;
   border-radius: 20px;
+  cursor: pointer;
 
   background-color: $accent-color;
   color: $secondary-text-color;
@@ -123,10 +119,17 @@
   letter-spacing: 00.015em;
 
   transition: background-color 250ms linear;
-  // @media screen and (min-width: 768px) {
-  //   left: 34px;
-  //   top: 260px;
-  // }
+  //position: absolute;
+  //top: 317px;
+  //left: 20px;
+  // z-index: 2;
+  @media screen and (min-width: 1280px) {
+    padding: 11px 35px;
+    font-size: 14px;
+    line-height: 1.28;
+
+    margin-right: 15px;
+  }
 
   &:hover,
   &:focus {
@@ -154,6 +157,11 @@
   //   left: 108px;
   //   top: 260px;
   // }
+  @media screen and (min-width: 1280px) {
+    padding: 11px 20px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
 
   &:hover,
   &:focus {
