@@ -41,7 +41,6 @@
   margin-left: 20px;
 }
 
-
 //ABOUT-BTN
 .about__btn {
   position: relative;
@@ -75,8 +74,8 @@
 
     align-items: center;
     justify-content: center;
-
-    
+  }
+}
 .hero-section__btn-one {
   position: absolute;
   top: 317px;
@@ -121,6 +120,5 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
-
   }
 }
