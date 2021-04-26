@@ -1,7 +1,7 @@
 .contacts {
   padding-top: 44px;
   padding-bottom: 66px;
-  background: linear-gradient(#ffffff 10%, #fff5f6 90%);
+  background: linear-gradient($priority-background-color 16%, $secondary-background-color 0%);
 
   &__item {
     min-width: 220px;
