@@ -102,12 +102,12 @@
   }
 
   &__buttons {
-    padding-top: 54px;
+    margin-top: 54px;
   }
 
   &__btn-one {
     display: block;
-    margin-bottom: 10px;
+
     margin-left: auto;
     margin-right: auto;
     padding: 11px 17px;
@@ -135,7 +135,7 @@
 
   &__btn {
     display: block;
-    margin-bottom: 10px;
+
     margin-left: auto;
     margin-right: auto;
     padding: 11px 32px;
@@ -161,6 +161,18 @@
   }
 }
 
+.contacts__background-img {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__btn-item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts {
     padding-top: 60px;
@@ -170,7 +182,9 @@
       display: flex;
       flex-wrap: wrap;
       text-align: left;
-      margin-left: -20px;
+
+      margin-top: calc(-1 * 20px);
+      margin-left: calc(-1 * 20px);
     }
 
     &__item {
@@ -245,15 +259,11 @@
     }
 
     &__buttons {
-      padding-top: 81px;
+      margin-top: 81px;
       display: flex;
 
       align-items: center;
       justify-content: center;
-    }
-
-    &__btn-item {
-      margin-right: 14px;
     }
 
     &__btn-one {
@@ -268,20 +278,32 @@
       margin-left: 14px;
     }
   }
+
+  .contacts__btn-item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 }
+
+// url("../images/contacts/background@1x.png"),
 
 @media screen and (min-width: 1280px) {
   .contacts {
-    padding-top: 66px;
-    background: linear-gradient(#ffffff 10%, #fff5f6 90%);
-    background-image: url('../images/contacts/background@1x.png');
+    position: relative;
 
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    padding-top: 66px;
+    background-image: linear-gradient($priority-background-color 16%, $secondary-background-color 0%);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       & {
-        background: linear-gradient(#ffffff 10%, #fff5f6 90%);
-        background-image: url('../images/contacts/background@2x.png');
+        background-image: linear-gradient($priority-background-color 16%, $secondary-background-color 0%);
+
+        background-repeat: no-repeat;
+        background-size: contain;
       }
     }
 
@@ -345,11 +367,7 @@
     }
 
     &__buttons {
-      padding-top: 86px;
-    }
-
-    &__btn-item {
-      margin-right: 15px;
+      margin-top: 86px;
     }
 
     &__btn-one {
@@ -362,5 +380,14 @@
     &__icon {
       margin-left: 14px;
     }
+  }
+
+  .contacts__background-img {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+
+    display: block;
   }
 }
