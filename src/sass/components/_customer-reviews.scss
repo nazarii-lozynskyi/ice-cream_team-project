@@ -17,7 +17,7 @@
   background-color: #fafafa;
 
   &::before {
-    content: "";
+    content: '';
 
     position: absolute;
 
@@ -27,6 +27,10 @@
     height: 40px;
 
     background-image: url(../images/customer-reviews/quotation-marks@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/customer-reviews/quotation-marks@2x.png);
+      background-size: 54px 40px;
+    }
   }
 }
 
@@ -48,7 +52,7 @@
   font-weight: 500;
 
   &::after {
-    content: "";
+    content: '';
 
     margin-left: auto;
     margin-right: auto;
@@ -59,10 +63,15 @@
     height: 12px;
 
     background-image: url(../images/customer-reviews/home-and-two-dots@1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/customer-reviews/home-and-two-dots@2x.png);
+      background-size: 72.4px 12px;
+    }
   }
 
   &::before {
-    content: "";
+    content: '';
 
     margin-left: auto;
     margin-right: auto;
@@ -73,6 +82,10 @@
     height: 4px;
 
     background-image: url(../images/customer-reviews/three-dots@1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/customer-reviews/three-dots@2x.png);
+      background-size: 32px 4px;
+    }
   }
 }
 
@@ -88,7 +101,7 @@
     margin-top: 30px;
 
     &::before {
-      content: "";
+      content: '';
 
       top: 25px;
       left: 40px;
@@ -107,14 +120,14 @@
     line-height: 186%;
 
     &::before {
-      content: "";
+      content: '';
 
       margin-top: 30px;
       margin-bottom: 18px;
     }
 
     &::after {
-      content: "";
+      content: '';
 
       margin-top: 30px;
     }
@@ -136,7 +149,7 @@
     max-width: 620px;
 
     &::before {
-      content: "";
+      content: '';
 
       top: 30px;
       left: 45px;
@@ -154,14 +167,14 @@
     line-height: 186%;
 
     &::before {
-      content: "";
+      content: '';
 
       margin-top: 15px;
       margin-bottom: 15px;
     }
 
     &::after {
-      content: "";
+      content: '';
 
       margin-top: 35px;
     }
@@ -183,7 +196,7 @@
     margin-right: auto;
 
     &::before {
-      content: "";
+      content: '';
 
       top: 30px;
       left: 62px;
@@ -201,14 +214,14 @@
     line-height: 186%;
 
     &::before {
-      content: "";
+      content: '';
 
       margin-top: 15px;
       margin-bottom: 15px;
     }
 
     &::after {
-      content: "";
+      content: '';
 
       margin-top: 35px;
     }
