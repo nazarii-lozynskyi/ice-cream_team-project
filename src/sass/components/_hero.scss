@@ -14,6 +14,7 @@
   position: relative;
   transform: translateY(-56px);
   height: 502px;
+  overflow: hidden;
   .container {
     position: relative;
   }
@@ -165,7 +166,7 @@
       z-index: 5;
     }
     @media screen and (min-width: 1280px) {
-      right: 35px;
+      right: 109px;
       bottom: -710px;
     }
   }
@@ -184,16 +185,24 @@
     bottom: -710px;
   }
 }
-.hero-img-ellipse {
+.hero-img-bcg {
+  background-color: #ffa5ba;
   position: absolute;
+  border-radius: 50%;
   bottom: -430px;
-  right: 0;
+  right: -63px;
+  width: 346px;
+  height: 344px;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     bottom: -402px;
     right: 137px;
+    width: 324px;
+    height: 322px;
   }
   @media screen and (min-width: 1280px) {
     right: 275px;
     bottom: -638px;
+    width: 538px;
+    height: 538px;
   }
 }
