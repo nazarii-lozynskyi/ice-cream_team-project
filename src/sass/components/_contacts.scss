@@ -10,6 +10,11 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+      max-width: 220px;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &__wrapper {
@@ -120,7 +125,8 @@
     line-height: 1.31;
     color: $priority-background-color;
     background-color: $btn-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -149,7 +155,8 @@
     line-height: 1.31;
     color: $accent-color;
     background-color: $priority-background-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       background-color: #ecebeb;
@@ -295,14 +302,22 @@
     position: relative;
 
     padding-top: 66px;
-    background-image: linear-gradient($priority-background-color 16%, $secondary-background-color 0%);
+    background-image: linear-gradient(
+      $priority-background-color 16%,
+      $secondary-background-color 0%
+    );
 
     background-repeat: no-repeat;
     background-size: contain;
 
-    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       & {
-        background-image: linear-gradient($priority-background-color 16%, $secondary-background-color 0%);
+        background-image: linear-gradient(
+          $priority-background-color 16%,
+          $secondary-background-color 0%
+        );
 
         background-repeat: no-repeat;
         background-size: contain;

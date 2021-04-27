@@ -2,6 +2,11 @@
   padding-top: 20px;
   padding-bottom: 70px;
   background-color: $secondary-background-color;
+  @media screen and (max-width: 767px) {
+    .container {
+      max-width: 280px;
+    }
+  }
 }
 .advantages__title {
   margin-top: 40px;
