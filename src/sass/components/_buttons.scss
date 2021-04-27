@@ -1,6 +1,7 @@
 .mobile-burger-btn {
   background-color: transparent;
   border: none;
+  cursor: pointer;
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 39px;
@@ -38,10 +39,11 @@
   padding-right: 57px;
   padding-top: 12px;
   padding-bottom: 12px;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    transform: scale(1.1);
   }
   @media screen and (min-width: 768px) {
     padding-left: 46px;
@@ -86,11 +88,12 @@
   align-items: center;
   text-align: center;
   color: $btn-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    transform: scale(1.1);
     //color: $priority-background-color;
   }
 }
@@ -118,7 +121,7 @@
   line-height: 1.25;
   letter-spacing: 00.015em;
 
-  transition: background-color 250ms linear;
+  transition: background-color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   //position: absolute;
   //top: 317px;
   //left: 20px;
@@ -134,6 +137,7 @@
   &:hover,
   &:focus {
     background-color: #c7133e;
+    transform: scale(1.1);
   }
 }
 .hero-section__btn-two {
@@ -152,7 +156,7 @@
   line-height: 1.25;
   letter-spacing: 00.015em;
 
-  transition: background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   // @media screen and (min-width: 768px) {
   //   left: 108px;
   //   top: 260px;
@@ -166,5 +170,6 @@
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    transform: scale(1.1);
   }
 }
